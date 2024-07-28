@@ -1,0 +1,149 @@
+/* Reset CSS para eliminar márgenes y rellenos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos existentes */
+  .body-register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f7941d;
+      border: none;
+  }
+  
+  .container-register {
+      background-color: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 600px; /* Ajustar el ancho si es necesario */
+      text-align: center;
+      position: relative;
+      min-height: 200px; /* Incrementa la altura mínima */
+  }
+  
+  .logo-container-register {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+  }
+  
+  .logo-circle-register {
+      width: 100px;
+      height: 80px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .logo-container-register img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+  }
+  
+  .logo-container-register h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: black;
+      padding-top: 10px;
+  }
+  
+  .registration-form-register {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .form-row-register {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      flex-direction: row; /* Cambiar a fila */
+  }
+  
+  .input-container-register {
+      position: relative;
+      flex: 1;
+      margin-right: 30px; /* Espacio entre campos */
+  }
+  
+  .input-container-register:last-child {
+      margin-right: 0; /* Sin margen derecho para el último campo */
+  }
+  
+  .input-container-register input {
+      width: 100%;
+      padding: 0.5rem 0;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      outline: none;
+      font-size: 1rem;
+      position: relative; /* Añadir posición relativa */
+      top: 30px; /* Ajustar la posición vertical */
+  }
+  
+  .input-container-register label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #777;
+      font-size: 1rem;
+      pointer-events: none;
+      transition: all 0.2s ease-in-out;
+      margin-top: 2rem;
+  }
+  
+  .input-container-register input:focus + label,
+  .input-container-register input:valid + label {
+      top: -20px;
+      font-size: 0.75rem;
+      color: #f7941d;
+  }
+  
+  .login-button-register {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: #f7941d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 4rem;
+  }
+  
+  .login-button-register:hover {
+      background-color: #e68a00;
+  }
+  
+  .links-register {
+      margin-top: 1rem;
+  }
+  
+  .links-register a {
+      display: block;
+      color: #777;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+  }
+  
+  .links-register a:hover {
+      text-decoration: underline;
+  }
+  
