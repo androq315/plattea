@@ -20,7 +20,7 @@ const Login = () => {
           </div>
           <button type="submit" className="login-button-login">Ingresar</button>
           <div className="links-login">
-            <Link to="#">¿Haz olvidado la contraseña?</Link>
+            <Link to={'/resetpass'}>¿Haz olvidado la contraseña?</Link>
             <Link to="#">Registrar</Link>
           </div>
         </form>
