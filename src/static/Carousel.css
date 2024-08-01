@@ -1,0 +1,41 @@
+/* src/components/Carousel.css */
+
+.carousel-2 {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+}
+
+.carousel-inner-2 {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item-2 {
+    min-width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2em;
+}
+
+.prev-2, .next-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.prev-2 {
+    left: 10px;
+}
+
+.next-2 {
+    right: 10px;
+}

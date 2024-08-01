@@ -1,0 +1,48 @@
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo del contenedor de los checkboxes */
+
+
+/* Estilo de los checkboxes personalizados */
+
+
+.custom-checkbox input[type="checkbox"] + .checkmark {
+    position: relative;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #f7e700; /* Color amarillo */
+    cursor: pointer;
+}
+
+/* Estilo cuando el checkbox está seleccionado */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #f7e700; /* Amarillo */
+}
+
+/* Estilo del punto negro cuando el checkbox está seleccionado */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+    width: 10px; /* Tamaño del punto negro */
+    height: 10px;
+    background-color: #000; /* Color negro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Mostrar el punto negro cuando el checkbox está seleccionado */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+}
+
+/* Estilo del texto */
+.custom-checkbox p {
+    margin: 0; /* Elimina el margen del párrafo */
+}
